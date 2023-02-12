@@ -290,6 +290,10 @@ header .top-nav {
   justify-content: space-between;
   padding: 15px;
 }
+header .top-nav .active{
+  color: var(--main-color);
+  font-weight: 600;
+}
 header .top-nav .privet {
   margin-right: 9px;
   margin-left: 9px;
@@ -305,6 +309,28 @@ header .icon {
   padding: 4px 8px 5px;
   border-radius: 50%;
   background: #f1f1f1;
+}
+header .icon.show {
+  background: var(--main-color);
+  color: var(--white);
+}
+header .icon.show .bi{
+  color: var(--white);
+}
+header .btn-group .dropdown-menu{
+  box-shadow: 0px 0px 20px #77777729;
+  top:45px;
+  border: none;
+}
+header .btn-group .dropdown-menu .dropdown-item{
+  text-align: center;
+  padding: 12px;
+}
+.dropdown-item:hover ,
+header .btn-group .dropdown-item:active {
+  color: #132A36;
+  text-decoration: none;
+  background-color: transparent
 }
 header .navbar-toggler {
   padding: 8px;
@@ -369,6 +395,12 @@ header .carousel-indicators .active {
   height: 10px;
   border-radius: 25px;
   background: var(--white);
+}
+/* breadcrumb */
+.breadcrumb{
+  background: #F8F8F8;
+  margin-bottom: 0;
+  color: #919191;
 }
 /* about */
 .about {
@@ -436,10 +468,54 @@ header .carousel-indicators .active {
   margin-bottom: 15px !important;
   height: 95% !important;
 }
+.offers-finall .card-body,
+.the-shop .card-body{
+  line-height: 2.5;
+}
+.offers-finall .items-hover,
+.the-shop .items-hover{
+  position: absolute;
+  width: 100%;
+  bottom: 40%;
+  opacity: 0;
+  transition: all .2s;
+}
+.offers-finall .items-hover a,
+.the-shop .items-hover  a{
+  color: #3D3D3D;
+}
+.offers-finall .items-hover .bi,
+.the-shop .items-hover .bi{
+  background: var(--white);
+  border-radius: 50%;
+  font-size: 14px;
+  padding: 8px 8px 7px 9px;
+}
+.offers-finall .items-hover .fa-heart,
+.the-shop .items-hover .fa-heart{
+  color: var(--main-color);
+}
+.offers-finall .card .shopping-cart,
+.the-shop .card .shopping-cart{
+  position: relative;
+}
+.offers-finall .card .btn-shopping,
+.the-shop .card .btn-shopping{
+  width: 80%;
+    background: var(--main-color);
+    padding: 10px;
+    color: #fff;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    opacity: 0;
+}
 .offers-finall .card img,
 .the-shop .card img {
   border-radius: 20px 20px 0 0;
   height: 100%;
+  position: relative;
 }
 .offers-finall .card p,
 .the-shop .card p {
@@ -453,6 +529,102 @@ header .carousel-indicators .active {
 .the-shop .card p del {
   text-decoration: line-through;
   color: #636363;
+}
+.offers-finall .card:hover .items-hover,
+.offers-finall .card:hover .btn-shopping,
+.the-shop .card:hover .items-hover,
+.the-shop .card:hover .btn-shopping{
+  opacity: 1;
+}
+.offers-finall .card:hover img,
+.the-shop .card:hover img {
+filter: brightness(0.5);
+}
+/* modal quick view */
+.product_view .modal-dialog{max-width: 1100px; width: 100%;}
+.product_view .images-view{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product_view .product_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product_view .product_images img{
+  border-radius: 25px;
+}
+.product_view .images-view img{
+
+  width: 25%;
+  padding: 10px;
+  height: 100px;
+}
+.product_view .modal-content{
+  border-radius: 25px;
+}
+.product_view .product_content{
+  width: 40%;
+}
+
+.product_view .product_content h5{
+  font-weight: 600;
+  line-height: 1.9;
+}
+.product_view .product_content .product-rate{
+  font-size: 18px;
+  color: #707070;
+}
+.product_view .product_content .product-rate .bi{
+  border-radius: 4px;
+  border: 1px solid #EEEEEE;
+  padding: 5px 5px 4px;
+  color: var(--black);
+  cursor: pointer;
+}
+.product_view .product_content .product-rate .bi-suit-heart{
+  color: var(--main-color);
+}
+.product_view .product_content .discount{
+  border-top: 1px solid #919191bb;
+  border-bottom: 1px solid #919191bb;
+  font-size: 18px;
+}
+
+.product_view .product_content .discount span{
+color: var(--main-color);
+padding-right: 5px;
+
+}
+.product_view .product_content .discount del{
+  text-decoration: line-through;
+  color: #919191bb;
+}
+.product_view .product_content .description-product ul li{
+  color: #2A2A2A;
+  font-weight: 600;
+}
+.product_view .product_content .result-description ul li{
+  color: #2A2A2A;
+}
+.product_view .product_content .count-product{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.product_view .product_content .count-product .form-select{
+  background-position: left 0.70rem center;
+  width: 30%;
+    padding: 0.1rem 0.5rem;
+    margin-right: 10px;
+}
+.product_view .product_content .count-product .btn-shopping{
+  width: 180px;
+  background: var(--main-color);
+  padding: 8px;
+  color: #fff;
 }
 /* popular offer */
 .popular .offer {
@@ -474,7 +646,7 @@ header .carousel-indicators .active {
   margin-right: 115px;
 }
 .offers-finall .card {
-  height: 290px !important;
+  height: 330px !important;
   border-radius: 20px;
   margin-bottom: 15px !important;
 }
@@ -524,6 +696,47 @@ footer .top-footer ul li{
 footer .top-footer ul li a{
   color:#2A2A2A;
 
+}
+/* term page */
+.term{
+  background: #FCFCFC;
+  padding-bottom: 120px;
+  color: #2a2a2ad0;
+  line-height: 1.9;
+  font-size: 18px;
+}
+/* help page */
+.help{
+  background: #FCFCFC;
+  padding-bottom: 120px;
+  color: #2a2a2ad0;
+  line-height: 1.9;
+}
+.help .btn{
+  color: var(--main-color);
+}
+.help .btn h5{
+  color:#2A2A2A;
+
+}
+.help .btn .bi{
+  margin-left: 10px;
+  font-size: 30px;
+  
+}
+.help .btn.collapsed{
+  color: #B1B1B1
+}
+.help .btn.collapsed .bi{
+  color:#2a2a2a61;
+}
+.card-body{
+  border: none !important;
+  background: transparent !important;
+  width: 90% !important;
+  margin: auto !important;}
+.help .collapse  .card-body{
+  font-size: 18px;
 }
 /* media */
 @media (min-width: 992px) and (max-width: 1370px) {
@@ -643,6 +856,11 @@ footer .top-footer ul li a{
     justify-content: center;
     padding-top: 8px;
   }
+  .product_view .product_content {
+    width: 50%;
+}
+
+
 }
 @media (max-width: 767.9px) {
   header .carousel-caption {
@@ -668,6 +886,9 @@ footer .top-footer ul li a{
   .offers-finall .carousel-offer {
     margin-right: 30px;
   }
+  .product_view .product_content {
+    width: 100%;
+}
 }
 @media (max-width: 575.98px) {
   header .top-nav {
