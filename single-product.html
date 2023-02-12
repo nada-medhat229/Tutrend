@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutrend</title>
+
+    <link rel="icon" type="image/x-icon" href="images/logo.svg" />
+
+    <!-- Bootstrap link  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+      integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css"
+    />
+    <link rel="stylesheet" href="./css/jquery.jqZoom.css" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!---loader---->
+    <div class="loader">
+      <div
+        class="loader-con d-flex flex-column align-items-center justify-content-center"
+      >
+        <div class="text-center">
+          <img
+            src="./images/logo.svg"
+            id="spin-animation"
+            alt=""
+            data-aos="zoom-out-left"
+            data-aos-duration="600"
+          />
+          <div
+            class="contain text-center"
+            data-aos="zoom-in-right"
+            data-aos-duration="800"
+            data-aos-delay="800"
+          >
+            <h4 class="text-center py-2">Tutrend</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** header  ***** -->
+    <header class="main-banner" id="header">
+      <div class="navbar-top">
+        <div class="container">
+          <div class="top-nav">
+            <div class="d-flex align-items-center">
+              <a href="./term.html" class="">سياسة الخصوصية</a>
+              <p class="privet"></p>
+              <a href="./help.html">المساعدة</a>
+            </div>
+            <div class="d-flex align-items-center">
+              <p class="mx-2">
+                <a href="">EN</a>
+              </p>
+              <a class="icon mx-2" href=""><i class="bi bi-bell-fill"></i></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <nav
+          class="navbar navbar-expand-lg navbar-light top-0 d-flex align-items-center justify-content-between"
+          data-aos="fade-down"
+        >
+          <div class="logo ps-3">
+            <img src="./images/Logo.png" alt="" />
+          </div>
+          <div class="d-lg-none d-flex align-items-center">
+            <div class="top-nav-search">
+              <a
+                href="javascript:void(0);"
+                class="icon mx-2 open-search"
+                type="submit"
+                ><i class="bi bi-search"></i
+              ></a>
+              <form action="">
+                <button type="submit"><i class="bi bi-search"></i></button>
+                <input type="search" placeholder="ابحث هنا" />
+              </form>
+            </div>
+            <a class="icon mx-2 pb-1" href=""
+              ><i class="bi fa-solid fa-repeat"></i
+            ></a>
+            <a class="icon mx-2" href=""><i class="bi bi-cart-fill"></i></a>
+            <a class="icon mx-2" href=""><i class="bi bi-person-fill"></i></a>
+          </div>
+
+          <div
+            class="collapse navbar-collapse justify-content-between align-items-center"
+            id="navbarSupportedContent"
+          >
+            <div
+              class="collap-small w-100 d-flex justify-content-around align-items-center"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html">
+                    الرئيسية</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./the_shop.html"> المتجر</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./blog.html"> المدونه</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#wait"> اتصل بنا</a>
+                </li>
+              </ul>
+              <div class="search-bar">
+                <input type="search" class="" name="" id="" />
+                <a class="icon mx-2" href=""><i class="bi bi-search"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="d-lg-flex d-none align-items-center">
+            <a class="icon mx-2 pb-1" href=""
+              ><i class="bi fa-solid fa-repeat"></i
+            ></a>
+            <a class="icon mx-2" href=""><i class="bi bi-cart-fill"></i></a>
+            <a class="icon mx-2" href=""><i class="bi bi-person-fill"></i></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ***** breadcrumb  ***** -->
+    <section class="breadcrumb">
+      <div class="container">
+        <div>
+          <div class="d-flex breadcrumb py-3">
+            <a href="index.html"> الرئيسية</a>
+            <span class="mx-2">/</span>
+            <a href="./the_shop.html"> المتجر</a>
+            <span class="mx-2">/</span>
+            <h6>ايربودز</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="single-product">
+      <div class="container">
+        <div class="product_view">
+          <div class="row">
+            <div class="col-xl-5 col-lg-4 col-md-12 col-12 product_img py-3">
+              <div class="product_images h-100">
+                <div class="jquery-script-clear"></div>
+                <div class="zoom-box">
+                  <img src="./images/02.png" class="img-responsive" />
+                </div>
+                <div class="images-view pt-2">
+                  <img src="./images/07.png" alt="" />
+                  <img src="./images/08.png" alt="" />
+                  <img src="./images/02.png" alt="" />
+                  <img src="./images/01.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-7 col-12 product-detail py-3">
+              <div class="ps-lg-5 ps-2">
+                <h5>
+                  سماعات جالاكسي بدز برو SM R190NZKAINU من سامسونج بلون فانتوم -
+                  اسود العددد (12 قطعة)
+                </h5>
+                <div
+                  class="product-rate d-flex align-items-center py-3 w-md-75 w-100"
+                >
+                  <div class="user-rate"></div>
+                  <p class="px-3">520 تقييم</p>
+                  <i class="bi bi-upload mx-2"></i>
+                  <i class="bi bi-suit-heart"></i>
+                </div>
+                <div class="discount py-2">
+                  <h5>
+                    5000 جنية
+                    <span>-10%</span>
+                  </h5>
+                  <del> 5500 </del>
+                </div>
+
+                <div class="d-flex">
+                  <div class="description-product">
+                    <ul>
+                      <li class="p-2">العلامة التجارية</li>
+                      <li class="p-2">اسم الطراز</li>
+                      <li class="p-2">اللون</li>
+                      <li class="p-2">تقنية الإتصال</li>
+                      <li class="p-2">وزن السلعة</li>
+                    </ul>
+                  </div>
+                  <div class="result-description">
+                    <ul>
+                      <li class="p-2">سامسونج</li>
+                      <li class="p-2">EP-TA800NBEGEU</li>
+                      <li class="p-2">فانتوم بلاك</li>
+                      <li class="p-2">بلوتوث</li>
+                      <li class="p-2">45 جرامات</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-5 col-12 product-shipping p-xl-5 p-2 text-md-center text-end"
+            >
+              <div class="shipping-delivary p-lg-3 p-2">
+                <div class="discount py-2 border-top-0">
+                  <h5>
+                    5000 جنية
+                    <span>-10%</span>
+                  </h5>
+                  <del> 5500 </del>
+                </div>
+                <div class="delivary">
+                  <p class="drive-inside">التوصيل مجانًا داخل المنصورة</p>
+                  <p class="drive-outside">التوصيل خارج المنصورة60 جنيه</p>
+                </div>
+                <div class="count-product pt-3">
+                  <form
+                    action=""
+                    class="d-flex align-items-center al justify-content-md-evenly justify-content-start"
+                  >
+                    <label for="">الكمية بالدستة</label>
+                    <select name="count" id="count" class="form-select w-25">
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </form>
+                  <button class="btn btn-shopping my-3">
+                    <i class="bi bi-cart-fill"></i> إضافة للسلة
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail-product pb-5">
+          <div class="row">
+            <div class="col-lg-8 col-12">
+              <div class="detail-1 py-3">
+                <h5 class="py-4 detail-title">تفاصيل المنتج</h5>
+                <div class="d-flex align-items-center">
+                  <div class="description-product">
+                    <ul>
+                      <li class="p-2">بطاريات</li>
+                      <li class="p-2">أبعاد المنتج</li>
+                      <li class="p-2">تاريخ توفر أول منتج</li>
+                      <li class="p-2">الشركة المصنعة</li>
+                      <li class="p-2">رقم موديل السلعة</li>
+                    </ul>
+                  </div>
+                  <div class="result-description pe-md-2 pe-0">
+                    <ul>
+                      <li class="p-2">‎ 1 AAA يتطلب بطاريات. (مرفقة)</li>
+                      <li class="p-2">‎ 2.1 x 2 x 2.1 سم; 45 جرامات</li>
+                      <li class="p-2">‎ 2022 أغسطس 31</li>
+                      <li class="p-2">سامسونج</li>
+                      <li class="p-2">‎ SM-R190NZKAINU</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-12">
+              <div class="detail-1 py-3">
+                <h5 class="py-4 detail-title">
+                  المستخدمون الذين شاهدوا هذه السلعة شاهدوا أيضاً
+                </h5>
+
+                <div class="row the-shop pt-3">
+                  <div class="col-md-4 col-12 pb-4">
+                    <div class="card border-0 text-center m-auto">
+                      <img
+                        src="./images/06.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div
+                        class="items-hover d-flex justify-content-evenly align-items-center p-3"
+                      >
+                        <a href="">
+                          <i class="bi fa-regular fa-heart"></i>
+                        </a>
+                        <a
+                          data-bs-toggle="modal"
+                          data-bs-target="#product_view"
+                        >
+                          <i class="bi fa-solid fa-magnifying-glass-plus"></i>
+                        </a>
+                        <a href="">
+                          <i class="bi fa-solid fa-repeat"></i>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <a href="./single-product.html" class="text-dark">
+                            سماعات ايربودز
+                          </a>
+                        </h5>
+                        <p class="card-text">(العدد 12 قطعة)</p>
+                        <div class="shopping-cart">
+                          <p class="spcial">
+                            100 جنية
+                            <del>120 جنية</del>
+                          </p>
+                          <button class="btn btn-shopping">
+                            <i class="bi bi-cart-fill"></i> إضافة للسلة
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12 pb-4">
+                    <div class="card border-0 text-center m-auto">
+                      <img
+                        src="./images/03.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div
+                        class="items-hover d-flex justify-content-evenly align-items-center p-3"
+                      >
+                        <a href="">
+                          <i class="bi fa-regular fa-heart"></i>
+                        </a>
+                        <a href="">
+                          <i class="bi fa-solid fa-magnifying-glass-plus"></i>
+                        </a>
+                        <a href="">
+                          <i class="bi fa-solid fa-repeat"></i>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">سماعات ايربودز</h5>
+                        <p class="card-text">(العدد 12 قطعة)</p>
+                        <div class="shopping-cart">
+                          <p class="spcial">
+                            100 جنية
+                            <del>120 جنية</del>
+                          </p>
+                          <button class="btn btn-shopping">
+                            <i class="bi bi-cart-fill"></i> إضافة للسلة
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12 pb-4">
+                    <div class="card border-0 text-center m-auto">
+                      <img
+                        src="./images/02.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div
+                        class="items-hover d-flex justify-content-evenly align-items-center p-3"
+                      >
+                        <a href="">
+                          <i class="bi fa-regular fa-heart"></i>
+                        </a>
+                        <a href="">
+                          <i class="bi fa-solid fa-magnifying-glass-plus"></i>
+                        </a>
+                        <a href="">
+                          <i class="bi fa-solid fa-repeat"></i>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">سماعات ايربودز</h5>
+                        <p class="card-text">(العدد 12 قطعة)</p>
+                        <div class="shopping-cart">
+                          <p class="spcial">
+                            100 جنية
+                            <del>120 جنية</del>
+                          </p>
+                          <button class="btn btn-shopping">
+                            <i class="bi bi-cart-fill"></i> إضافة للسلة
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-12">
+              <div class="detail-1 py-3">
+                <h5 class="py-4 detail-title">
+                  المستخدمون الذين اشتروا هذا المنتج اشتروا أيضًا
+                </h5>
+                <div class="row the-shop pt-3">
+                  <div class="col-md-4 col-12 pb-4">
+                    <div class="card border-0 text-center m-auto">
+                      <img
+                        src="./images/08.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div
+                        class="items-hover d-flex justify-content-evenly align-items-center p-3"
+                      >
+                        <a href="">
+                          <i class="bi fa-regular fa-heart"></i>
+                        </a>
+                        <a
+                          data-bs-toggle="modal"
+                          data-bs-target="#product_view"
+                        >
+                          <i class="bi fa-solid fa-magnifying-glass-plus"></i>
+                        </a>
+                        <a href="">
+                          <i class="bi fa-solid fa-repeat"></i>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <a href="./single-product.html" class="text-dark">
+                            سماعات ايربودز
+                          </a>
+                        </h5>
+                        <p class="card-text">(العدد 12 قطعة)</p>
+                        <div class="shopping-cart">
+                          <p class="spcial">
+                            100 جنية
+                            <del>120 جنية</del>
+                          </p>
+                          <button class="btn btn-shopping">
+                            <i class="bi bi-cart-fill"></i> إضافة للسلة
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12 pb-4">
+                    <div class="card border-0 text-center m-auto">
+                      <img
+                        src="./images/07.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div
+                        class="items-hover d-flex justify-content-evenly align-items-center p-3"
+                      >
+                        <a href="">
+                          <i class="bi fa-regular fa-heart"></i>
+                        </a>
+                        <a href="">
+                          <i class="bi fa-solid fa-magnifying-glass-plus"></i>
+                        </a>
+                        <a href="">
+                          <i class="bi fa-solid fa-repeat"></i>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">سماعات ايربودز</h5>
+                        <p class="card-text">(العدد 12 قطعة)</p>
+                        <div class="shopping-cart">
+                          <p class="spcial">
+                            100 جنية
+                            <del>120 جنية</del>
+                          </p>
+                          <button class="btn btn-shopping">
+                            <i class="bi bi-cart-fill"></i> إضافة للسلة
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12 pb-4">
+                    <div class="card border-0 text-center m-auto">
+                      <img
+                        src="./images/03.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div
+                        class="items-hover d-flex justify-content-evenly align-items-center p-3"
+                      >
+                        <a href="">
+                          <i class="bi fa-regular fa-heart"></i>
+                        </a>
+                        <a href="">
+                          <i class="bi fa-solid fa-magnifying-glass-plus"></i>
+                        </a>
+                        <a href="">
+                          <i class="bi fa-solid fa-repeat"></i>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">سماعات ايربودز</h5>
+                        <p class="card-text">(العدد 12 قطعة)</p>
+                        <div class="shopping-cart">
+                          <p class="spcial">
+                            100 جنية
+                            <del>120 جنية</del>
+                          </p>
+                          <button class="btn btn-shopping">
+                            <i class="bi bi-cart-fill"></i> إضافة للسلة
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-12">
+              <div class="detail-1 py-3">
+                <h5 class="py-4 detail-title">
+                  المستخدمون الذين اشتروا هذا المنتج اشتروا أيضًا
+                </h5>
+                <p class="py-3">
+                  سماعات جالاكسي بدز برو SM-R190NZKAINU من سامسونج بلون فانتوم -
+                  أسود
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-8 col-12">
+              <div class="detail-1 py-3">
+                <div class="row">
+                  <div class="col-md-4 col-12 rating">
+                    <div class="rating pb-4">
+                      <h5 class="py-4 detail-title">مراجعات المستخدمين</h5>
+                      <div class="d-flex align-items-center">
+                        <div class="user-rate" rateYo="4"></div>
+                        <p class="px-2">4.2 من 5</p>
+                      </div>
+
+                      <p class="py-3">520 من التقييمات العالية</p>
+
+                      <div
+                        class="d-flex justify-content-between align-items-center py-2"
+                      >
+                        <p>5 نجوم</p>
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 59%"></div>
+                        </div>
+                        <p>%59</p>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center py-2"
+                      >
+                        <p>4 نجوم</p>
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 28%"></div>
+                        </div>
+                        <p>%28</p>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center py-2"
+                      >
+                        <p>3 نجوم</p>
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 10%"></div>
+                        </div>
+                        <p>%10</p>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center py-2"
+                      >
+                        <p>نجمتان</p>
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 3%"></div>
+                        </div>
+                        <p>%3</p>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center py-2"
+                      >
+                        <p>نـجـمـة</p>
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 7%"></div>
+                        </div>
+                        <p>%7</p>
+                      </div>
+                    </div>
+                    <div class="add-comment pt-4">
+                      <button
+                        class="btn"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseComment"
+                        aria-expanded="false"
+                        aria-controls="collapseComment"
+                      >
+                        <h6 class="pb-3">قم بكتابة مراجعة لهذا المنتج</h6>
+                        <p>شارك آراءك مع الآخرين</p>
+                      </button>
+                      <div class="collapse" id="collapseComment">
+                        <form action="">
+                            <div class="d-flex align-items-center py-3">
+                                <label for="">اختر تقييمك</label>
+                                <div
+                                  id="your-rate"
+                                  class=" px-2"
+                                  rateYo="5"
+                                ></div>
+                            </div>
+                            <textarea name="" id="" class="w-100 form-control m-0" rows="5"></textarea>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-12 pe-5">
+                    <select class="form-select my-4">
+                      <option>أفضل المراجعات</option>
+                      <option>أفضل المراجعات</option>
+                      <option>أفضل المراجعات</option>
+                    </select>
+                    <div class="comment-person py-4">
+                      <div class="personal-detail">
+                        <i class="bi bi-person-fill"></i>
+                        <p class="px-2">محمود مصطفى</p>
+                      </div>
+                      <div class="user-rate my-3" rateYo="3"></div>
+                      <p class="my-2">
+                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
+                        لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
+                        أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم
+                        استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ
+                        -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي،
+                        هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها
+                      </p>
+                    </div>
+                    <div class="comment-person py-4">
+                      <div class="personal-detail">
+                        <i class="bi bi-person-fill"></i>
+                        <p class="px-2">محمود مصطفى</p>
+                      </div>
+                      <div class="user-rate my-3"></div>
+                      <p class="my-2">
+                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
+                        لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
+                        أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم
+                        استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ
+                        -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي،
+                        هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها
+                      </p>
+                    </div>
+                    <div class="py-4 link">
+                      <a href="">شاهد جميع المراجعات</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** subscribe  ***** -->
+    <section class="subscribe py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-12 align-self-center">
+            <div
+              class="d-flex align-items-center text-white justify-content-md-start justify-content-center"
+            >
+              <i class="bi bi-envelope-fill"></i>
+              <p>اشترك في نشرتنا الإخبارية</p>
+            </div>
+          </div>
+          <div class="col-md-7 col-12">
+            <form
+              action=""
+              class="d-flex justify-content-between align-items-center"
+            >
+              <input
+                type="text"
+                class="input-subscribe form-control"
+                placeholder="بريدك الإلكتروني"
+              />
+              <button class="btn btn-subscribe">اشترك</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** footer  ***** -->
+    <footer class="pt-4">
+      <div class="top-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 pb-3">
+              <div class="logo">
+                <img src="./images/Logo.png" alt="" />
+              </div>
+              <p class="py-2">
+                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام
+              </p>
+              <div
+                class="icons d-flex justify-content-lg-between justify-content-evenly align-items-center"
+              >
+                <i class="bi fa-brands fa-facebook-f"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 pb-3 pe-lg-5 pe-2">
+              <h4 class="head-footer">الدعم</h4>
+              <ul>
+                <li><a href="">المساعدة</a></li>
+                <li><a href="">سياسة الخصوصية</a></li>
+                <li><a href="">(+01) 850-315-5862</a></li>
+                <li><a href="">المنصورة-شارع الإستاد</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 pb-3 pe-lg-5 pe-2">
+              <h4 class="head-footer">الملف الشخصي</h4>
+              <ul>
+                <li><a href="">التسجيل</a></li>
+                <li><a href=""> الصفحة الشخصية</a></li>
+                <li><a href="">السلة</a></li>
+                <li><a href="">المفضلة</a></li>
+                <li><a href="">المقارنة</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 pb-3 pe-lg-5 pe-2">
+              <h4 class="head-footer">خريطة الموقع</h4>
+              <ul>
+                <li><a href="">الرئيسية</a></li>
+                <li><a href=""> المتجر</a></li>
+                <li><a href="">العروض</a></li>
+                <li><a href="">المدونة</a></li>
+                <li><a href="">التواصل</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer py-2">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-12">
+              <p>جميع الحقوق حفوظة لموقع سمارت فيجن</p>
+            </div>
+            <div class="col-md-6 col-12 brand">
+              <img src="./images/logooo.png" class="logo-footer" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/jquery.jqZoom.js"></script>
+    <!-- bootstrap script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+      integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+      integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.4/jquery.rateyo.min.js"
+      integrity="sha512-09bUVOnphTvb854qSgkpY/UGKLW9w7ISXGrN0FR/QdXTkjs0D+EfMFMTB+CGiIYvBoFXexYwGUD5FD8xVU89mw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

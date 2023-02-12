@@ -93,11 +93,17 @@ $(document).ready(function () {
   $(function () {
     $(".user-rate").rateYo({
       rating: $(".user-rate").attr("rateYo"),
-      starWidth: "15px",
+      starWidth: "20px",
       ratedFill: "#FFC107",
       readOnly: true,
       normalFill: "#FFC107",
       rtl: true,
+    });
+    $("#your-rate").rateYo({
+      starWidth: "15px",
+      ratedFill: "#FFC107",
+      rating: 0,
+      fullStar: true
     });
   });
   $(".blog .card").hover(function () {
@@ -109,5 +115,15 @@ $(document).ready(function () {
       100
     );
   });
+  $(function () {
+    $(".single-product .img-responsive").jqZoom({
+      selectorWidth: 30,
+      selectorHeight: 30,
+      viewerWidth: 600,
+      viewerHeight: 400,
+    });
+   
+  });
+
   AOS.init();
 });
