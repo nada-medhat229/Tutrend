@@ -119,7 +119,7 @@ $(document).ready(function () {
     $(".single-product .img-responsive").jqZoom({
       selectorWidth: 30,
       selectorHeight: 30,
-      viewerWidth: 600,
+      viewerWidth: "100%",
       viewerHeight: 400,
     });
    

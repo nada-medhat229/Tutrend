@@ -1147,6 +1147,7 @@ background: var(--white);
 .single-product .zoom-box .viewer-box {
   right: 0;
   top: 100% !important;
+  margin-top: 10px;
 }
 }
 @media (max-width: 575.98px) {
