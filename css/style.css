@@ -454,6 +454,7 @@ header .carousel-indicators .active {
 }
 /* the-shop */
 .offers-finall,
+.the_shop_collection,
 .the-shop {
   background: #fcfcfc;
 }
@@ -651,51 +652,156 @@ padding-right: 5px;
   margin-bottom: 15px !important;
 }
 /* subscribe */
-.subscribe{
+.subscribe {
   background: var(--black);
 }
-.subscribe .bi{
+.subscribe .bi {
   font-size: 26px;
   margin-left: 12px;
 }
-.subscribe .input-subscribe{
+.subscribe .input-subscribe {
   width: 75%;
   display: inline;
 }
-.subscribe .btn-subscribe{
+.subscribe .btn-subscribe {
   width: 20%;
   background: var(--main-color);
   color: var(--white);
   padding: 1rem;
 }
 /* footer */
-footer .bottom-footer{
+footer .bottom-footer {
   background: #fcfcfcf6;
 }
-footer .logo-footer{
+footer .logo-footer {
   width: 150px;
 }
-footer .brand{
+footer .brand {
   display: flex;
   justify-content: flex-end;
 }
-footer .top-footer .logo img{
+footer .top-footer .logo img {
   width: 120px;
 }
-footer .top-footer .icons .bi{
+footer .top-footer .icons .bi {
   color: #919191;
   font-size: 20px;
 }
-footer .top-footer .head-footer{
+footer .top-footer .head-footer {
   color: var(--main-color);
 }
-footer .top-footer ul li{
+footer .top-footer ul li {
   padding-top: 7px;
   padding-bottom: 7px;
 }
-footer .top-footer ul li a{
-  color:#2A2A2A;
+footer .top-footer ul li a {
+  color: #2a2a2a;
+}
+/*.the_shop_collection page  */
+.the_shop_collection .selected {
+  border-radius: 18px;
+  border: 1px solid #e5e5e5;
+  background: var(--white);
+}
+.the_shop_collection .selected .accordion {
+  --bs-accordion-border-color: none;
+}
+.the_shop_collection .selected .accordion-item {
+  background: transparent;
+}
+.the_shop_collection .selected .accordion-button:focus {
+  border-color: none;
+  box-shadow: none;
+}
+.the_shop_collection .selected .accordion-item:first-of-type,
+.the_shop_collection .selected .accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.the_shop_collection .selected .accordion-button:not(.collapsed) {
+  color: #2a2a2a;
+  background-color: transparent;
+  box-shadow: none;
+}
+.the_shop_collection .selected .accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+}
+.the_shop_collection .selected .accordion .accordion-body {
+  color: #919191;}
+.form-check-input:checked {
+  background-color: var(--white);
+  border: 4px solid var(--main-color);
+  box-shadow: none;
+}
+.form-check .form-check-input {
+  float: right;
+  margin-left: 0.5em;
+}
 
+.the_shop_collection .accordion-button::after,
+.offcanvas .accordion-button:not(.collapsed)::after {
+  background-image: url(../images/free-arrow-down-icon-3101-thumb.png) !important;
+}
+.the_shop_collection .accordion-button:not(.collapsed)::after {
+  background-image: url(../images//up-arrows.png) !important;
+  transform: rotate(0);
+}
+.the_shop_collection .accordion-button::after {
+  margin-right: auto;
+  margin-left: 0;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.the_shop_collection .accordion-body .form-select {
+  background-position: left 0.75rem center;
+}
+/* blogs page */
+.blog .card {
+  border-radius: 18px;
+    position: relative;
+    display: block;
+    background: #FFFFFF;
+    height: 380px;
+    border-radius: 25px;
+    overflow: hidden;
+  
+}
+.blog .card .card-img-top{
+  border-radius: 18px 18px 0 0;
+}
+.blog .card .card-title{
+  color: var(--main-color);
+  font-weight: 600;
+}
+.blog .card .card-text{
+  color: #2A2A2A;
+}
+.blog .card-comm {
+  display: none;
+  color:#7E7E7E ;
+  font-size: 14px;
+  line-height: 1.8em;
+  border-top: 1px solid #6666663a;
+}
+.blog .card-comm p .bi{
+  color: var(--main-color);
+
+}
+.blog .post-content {
+  position: absolute;
+  bottom: 0;
+  background: #FFFFFF;
+  width: 100%;
+  padding: 15px 20px 20px;
+   transition: all 0.9s ;
+}
+.blog .card .bord {
+  background: #7e7e7eb4;
+  color: #7E7E7E;
+  width: 1px;
+  height: 30px;
 }
 /* term page */
 .term{
@@ -849,10 +955,10 @@ footer .top-footer ul li a{
   .offers-finall .carousel-offer {
     margin-right: 50px;
   }
-  footer .bottom-footer{
+  footer .bottom-footer {
     text-align: center;
   }
-  footer .brand{
+  footer .brand {
     justify-content: center;
     padding-top: 8px;
   }

@@ -100,5 +100,14 @@ $(document).ready(function () {
       rtl: true,
     });
   });
+  $(".blog .card").hover(function () {
+    $(this).find(".card-comm").stop().animate(
+      {
+        height: "toggle",
+        opacity: "toggle",
+      },
+      100
+    );
+  });
   AOS.init();
 });
