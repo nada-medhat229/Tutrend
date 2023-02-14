@@ -91,14 +91,15 @@ $(document).ready(function () {
   });
 
   $(function () {
-    $(".user-rate").rateYo({
-      rating: $(".user-rate").attr("rateYo"),
-      starWidth: "20px",
-      ratedFill: "#FFC107",
-      readOnly: true,
-      normalFill: "#FFC107",
-      rtl: true,
-    });
+    for (let i = 1; i <= 5; i++) {
+      $(".user-rate"+i).rateYo({
+        rating: i,
+        starWidth: "20px",
+        readOnly: true,
+        rtl: true,
+      });
+    }
+  
     $("#your-rate").rateYo({
       starWidth: "15px",
       ratedFill: "#FFC107",
@@ -125,5 +126,16 @@ $(document).ready(function () {
    
   });
 
+  $(function (){
+    let image_small = document.querySelectorAll(".images-view img");
+let image_large =document.querySelector(".img-responsive");
+    for (let i = 0; i < image_small.length; i++) {
+      image_small[i].addEventListener("click", function() {
+        image_large.src=image_small[i].src
+      })
+    }
+   
+  })
+  
   AOS.init();
 });

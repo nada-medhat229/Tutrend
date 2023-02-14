@@ -574,6 +574,13 @@ filter: brightness(0.5);
 .product_view .product_content{
   width: 40%;
 }
+.product_view #imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
 .product_view .product-detail h5,
 .product_view .product_content h5{
   font-weight: 600;
