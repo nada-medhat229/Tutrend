@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutrend</title>
+
+    <link rel="icon" type="image/x-icon" href="images/logo.svg" />
+
+    <!-- Bootstrap link  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+      integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css"
+    />
+    <link rel="stylesheet" href="./css/jquery.jqZoom.css" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!---loader---->
+    <div class="loader">
+      <div
+        class="loader-con d-flex flex-column align-items-center justify-content-center"
+      >
+        <div class="text-center">
+          <img
+            src="./images/logo.svg"
+            id="spin-animation"
+            alt=""
+            data-aos="zoom-out-left"
+            data-aos-duration="600"
+          />
+          <div
+            class="contain text-center"
+            data-aos="zoom-in-right"
+            data-aos-duration="800"
+            data-aos-delay="800"
+          >
+            <h4 class="text-center py-2">Tutrend</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** header  ***** -->
+    <header class="main-banner" id="header">
+      <div class="navbar-top">
+        <div class="container">
+          <div class="top-nav">
+            <div class="d-flex align-items-center">
+              <a href="./term.html" class="">سياسة الخصوصية</a>
+              <p class="privet"></p>
+              <a href="./help.html">المساعدة</a>
+            </div>
+            <div class="d-flex align-items-center">
+              <p class="mx-2">
+                <a href="">EN</a>
+              </p>
+              <a class="icon mx-2" href=""><i class="bi bi-bell-fill"></i></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <nav
+          class="navbar navbar-expand-lg navbar-light top-0 d-flex align-items-center justify-content-between"
+          data-aos="fade-down"
+        >
+          <div class="logo ps-3">
+            <a href="./index.html">
+              <img src="./images/Logo.png" alt="" />
+            </a>
+          </div>
+          <div class="d-lg-none d-flex align-items-center">
+            <div class="top-nav-search">
+              <a
+                href="javascript:void(0);"
+                class="icon mx-2 open-search"
+                type="submit"
+                ><i class="bi bi-search"></i
+              ></a>
+              <form action="">
+                <button type="submit"><i class="bi bi-search"></i></button>
+                <input type="search" placeholder="ابحث هنا" />
+              </form>
+            </div>
+            <a class="icon mx-2 pb-1" href="./compare.html"
+              ><i class="bi fa-solid fa-repeat"></i
+            ></a>
+            <a class="icon mx-2" href="./cart.html"
+              ><i class="bi bi-cart-fill"></i
+            ></a>
+            <div class="btn-group">
+              <button
+                type="button"
+                class="icon mx-2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person-fill"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./login.html">تسجيل الدخول</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./regist.html">إنشاء حساب</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="collapse navbar-collapse justify-content-between align-items-center"
+            id="navbarSupportedContent"
+          >
+            <div
+              class="collap-small w-100 d-flex justify-content-around align-items-center"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html">
+                    الرئيسية</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./the_shop.html"> المتجر</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./blog.html"> المدونه</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contactUs.html"> اتصل بنا</a>
+                </li>
+              </ul>
+              <div class="search-bar">
+                <input type="search" class="" name="" id="" />
+                <a class="icon mx-2" href=""><i class="bi bi-search"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="d-lg-flex d-none align-items-center">
+            <a class="icon mx-2 pb-1" href="./compare.html"
+              ><i class="bi fa-solid fa-repeat"></i
+            ></a>
+            <a class="icon mx-2" href="./cart.html"
+              ><i class="bi bi-cart-fill"></i
+            ></a>
+
+            <div class="btn-group">
+              <button
+                type="button"
+                class="icon mx-2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person-fill"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./login.html">تسجيل الدخول</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href=".regist.html">إنشاء حساب</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ***** breadcrumb  ***** -->
+    <section class="breadcrumb">
+      <div class="container">
+        <div>
+          <div class="d-flex breadcrumb py-3">
+            <a href="index.html"> الرئيسية</a>
+            <span class="mx-2">/</span>
+            <h6>السلة</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cart -->
+
+    <div id="wizard" class="cart py-5">
+      <div class="steps-container row">
+        <div class="col-md-3 col-6">
+            <a href="javascript:void" class="step step1">
+                <i class="bi bi-cart-fill"></i>السلة
+              </a>
+        </div>
+        <div class="col-md-3 col-6">
+            <a href="javascript:void" class="step">
+                <i class="bi bi-geo-alt-fill"></i>
+                عنوان الشحن
+              </a></div>
+              <div class="col-md-3 col-6">
+                <a href="javascript:void" class="step">
+                    <i class="bi fa-solid fa-wallet"></i>
+                    <p class="pe-2">طريقة الدفع</p>
+                  </a>
+              </div>
+              <div class="col-md-3 col-6">
+                <a href="javascript:void" class="step step4">
+                    <i class="bi fa-solid fa-check"></i>
+                    <p class="pe-2">تأكيد الدفع</p>
+                  </a>
+              </div>
+
+     
+      </div>
+      <!-- One "tab" for each step in the form: -->
+      <div class="tab">
+        <div class="container orders-cart">
+          <div class="row">
+            <div class=" col-lg-9 col-12 ">
+              <div class="cart-title bg-white d-flex justify-content-between p-2 align-items-center rounded px-4">
+                    <h6>
+                        السلة
+                    </h6>
+                    <span>
+                        2
+                    </span>
+              </div>
+              <div class="cart-product-item row pt-4 pb-5 align-items-center border-bottom">
+                <div class="col-md-4 col-12">
+                  <img src="images/07.png" alt="" class="img-cart mb-md-0 mb-3"/>
+                </div>
+                <div class="col-md-8 col-12">
+                   
+                  <div
+                    class="cart-product-name d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="w-75">
+                      سماعات جالاكسي بدز برو SM R190NZKAINU من سامسونج بلون
+                      فانتوم - اسود العددد (12 قطعة)
+                    </h5>
+                   
+                      <button class="btn remove-product fw-bold"> حذف</button>
+                   
+                  </div>
+                  <p class="product-preview fs-5 py-md-4 py-2">500جنيه</p>
+                    <div class="product-quantity d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                      <h5>الكمية بالدستة</h5>
+
+                        <button id="minus" class="btn btn-calc"><i class="bi bi-dash-circle-fill"></i></button>
+                        <input type="text" value="0" id="input" class="value-output"/>
+                        <button id="plus" class="btn btn-calc"><i class="bi bi-plus-circle-fill"></i></button>  
+                      </div>
+                      <div class="product-full-price">
+                        <h5 class="d-inline-block">الإجمالي</h5>
+                        <span class="fs-5 px-2 px-md-3">250 ريال</span>
+                      </div>
+                    </div>
+                   
+                </div>
+              </div>
+              <div class="cart-product-item row pt-4 pb-5 align-items-center">
+                <div class="col-md-4 col-12">
+                  <img src="images/07.png" alt="" class="img-cart mb-md-0 mb-3"/>
+                </div>
+                <div class="col-md-8 col-12">
+                   
+                  <div
+                    class="cart-product-name d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="w-75">
+                      سماعات جالاكسي بدز برو SM R190NZKAINU من سامسونج بلون
+                      فانتوم - اسود العددد (12 قطعة)
+                    </h5>
+                   
+                      <button class="btn remove-product fw-bold"> حذف</button>
+                   
+                  </div>
+                  <p class="product-preview fs-5 py-md-4 py-2">500جنيه</p>
+                    <div class="product-quantity d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                      <h5>الكمية بالدستة</h5>
+
+                        <button id="minus" class="btn btn-calc"><i class="bi bi-dash-circle-fill"></i></button>
+                        <input type="text" value="0" id="input" class="value-output"/>
+                        <button id="plus" class="btn btn-calc"><i class="bi bi-plus-circle-fill"></i></button>  
+                      </div>
+                      <div class="product-full-price">
+                        <h5 class="d-inline-block">الإجمالي</h5>
+                        <span class="fs-5 px-2 px-md-3">250 ريال</span>
+                      </div>
+                    </div>
+                   
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-3 col-12  px-xl-5 px-0">
+              <div class="order-summary p-3 ">
+                <h6 class="fw-bold pb-3">ملخص الطلب</h6>
+                <p class="d-flex justify-content-between pb-3">عدد المنتجات <span class="ps-4">2</span></p>
+                <p class="d-flex justify-content-between pb-3">السعر<span>1000جنيه</span></p>
+                <h6 class="fw-bold border-top py-3">التوصيل</h6>
+               <form action="" class="pb-3">
+                <div class="form-check">
+                    <input type="radio" id="inside" name="delivary" value="inside" class="form-check-input">
+                    <label for="" class="form-check-label">داخل المنصورة
+                        </label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="outside" name="delivary" value="outside" class="form-check-input">
+                    <label for="" class="form-check-label">خارج المنصورة 
+                        </label>
+                </div>
+               </form>
+               <div class="border-top py-3 d-flex justify-content-center count-total fw-bold">
+                <p>الإجمالي</p>
+                <span>500جنيه</span>
+               </div>
+                <button
+                  type=" button "
+                  class="btn complete-order w-100"
+                  onclick="nextPrev(1)"
+                >
+                تأكيد الطلب
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="tab">
+        <div class="container address-tab">
+            <div class="row">
+                <div class=" col-lg-9 col-12 ">
+                  <div class="cart-title bg-white d-flex justify-content-between p-2 align-items-center rounded px-4">
+                        <h6>
+                            عنوان الشحن
+                        </h6>
+                       
+                  </div>
+
+                  <div class="cart-product-item row pt-4 pb-5 align-items-center border-bottom">
+                    <div class="col-md-4 col-12">
+                      <img src="images/07.png" alt="" class="img-cart mb-md-0 mb-3"/>
+                    </div>
+                    <div class="col-md-8 col-12">
+                       
+                      <div
+                        class="cart-product-name d-flex justify-content-between align-items-center"
+                      >
+                        <h5 class="w-75">
+                          سماعات جالاكسي بدز برو SM R190NZKAINU من سامسونج بلون
+                          فانتوم - اسود العددد (12 قطعة)
+                        </h5>
+                       
+                          <button class="btn remove-product fw-bold"> حذف</button>
+                       
+                      </div>
+                      <p class="product-preview fs-5 py-md-4 py-2">500جنيه</p>
+                        <div class="product-quantity d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center">
+                          <h5>الكمية بالدستة</h5>
+    
+                            <button id="minus" class="btn btn-calc"><i class="bi bi-dash-circle-fill"></i></button>
+                            <input type="text" value="0" id="input" class="value-output"/>
+                            <button id="plus" class="btn btn-calc"><i class="bi bi-plus-circle-fill"></i></button>  
+                          </div>
+                          <div class="product-full-price">
+                            <h5 class="d-inline-block">الإجمالي</h5>
+                            <span class="fs-5 px-2 px-md-3">250 ريال</span>
+                          </div>
+                        </div>
+                       
+                    </div>
+                  </div>
+                  <div class="cart-product-item row pt-4 pb-5 align-items-center">
+                    <div class="col-md-4 col-12">
+                      <img src="images/07.png" alt="" class="img-cart mb-md-0 mb-3"/>
+                    </div>
+                    <div class="col-md-8 col-12">
+                       
+                      <div
+                        class="cart-product-name d-flex justify-content-between align-items-center"
+                      >
+                        <h5 class="w-75">
+                          سماعات جالاكسي بدز برو SM R190NZKAINU من سامسونج بلون
+                          فانتوم - اسود العددد (12 قطعة)
+                        </h5>
+                       
+                          <button class="btn remove-product fw-bold"> حذف</button>
+                       
+                      </div>
+                      <p class="product-preview fs-5 py-md-4 py-2">500جنيه</p>
+                        <div class="product-quantity d-flex align-items-center justify-content-between">
+                          <div class="d-flex align-items-center">
+                          <h5>الكمية بالدستة</h5>
+    
+                            <button id="minus" class="btn btn-calc"><i class="bi bi-dash-circle-fill"></i></button>
+                            <input type="text" value="0" id="input" class="value-output"/>
+                            <button id="plus" class="btn btn-calc"><i class="bi bi-plus-circle-fill"></i></button>  
+                          </div>
+                          <div class="product-full-price">
+                            <h5 class="d-inline-block">الإجمالي</h5>
+                            <span class="fs-5 px-2 px-md-3">250 ريال</span>
+                          </div>
+                        </div>
+                       
+                    </div>
+                  </div>
+                  <button
+                  type="button"
+                  class="btn complete-order"
+                  onclick="nextPrev(1)"
+                >
+                  استمرار
+                </button>
+                </div>
+                <div class=" col-lg-3 col-12  px-xl-5 px-0">
+                    <div class="result-order d-flex py-3">
+                        <div>
+                            <img src="./images/07.png" class="rounded img-checkout" alt="">
+                        </div>
+                        <div >
+                                    <select id="" name="" class="form-control form-select" aria-label="">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                    <p>
+                                        500جنيه
+                                    </p>
+                        </div>
+                    </div>
+                    <div class="bordinbottom"></div>
+                    <div class="result-order d-flex py-3">
+                        <div>
+                            <img src="./images/07.png" class="rounded img-checkout" alt="">
+                        </div>
+                        <div >
+                                    <select id="" name="" class="form-control form-select" aria-label="">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                    <p>
+                                        500جنيه
+                                    </p>
+                        </div>
+                    </div>
+                  <div class="order-summary p-3 ">
+                    <h6 class="fw-bold pb-3">ملخص الطلب</h6>
+                    <p class="d-flex justify-content-between pb-3">عدد المنتجات <span class="ps-4">2</span></p>
+                    <p class="d-flex justify-content-between pb-3">السعر<span>1000جنيه</span></p>
+                    <p class="d-flex justify-content-between pb-3">التوصيل<span>1000جنيه</span></p>
+                  
+                   <div class="border-top py-3 d-flex justify-content-center count-total fw-bold">
+                    <p>الإجمالي</p>
+                    <span>500جنيه</span>
+                   </div>
+                   
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="tab">
+        <div class="container order-preview">
+          <div class="row flex-lg-row flex-column-reverse">
+            <div class="col-12 col-lg-8 mb-4">
+              <div class="order-address d-flex align-items-center mb-5">
+                <a
+                  href="javascript:void(0);"
+                  class="edit-address"
+                  onclick="nextPrev(-1)"
+                  ><i class="bi bi-pencil-square"></i> تعديل العنوان</a
+                >
+                <div>
+                  <h6>عنوان الشحن</h6>
+                </div>
+                <div class="d-flex flex-column px-3">
+                  <span class="mb-2 text">الاسم يكتب هنا</span>
+                  <span
+                    >العنوان يكتب هنا...العنوان يكتب هنا...العنوانيكتب هنا</span
+                  >
+                </div>
+              </div>
+              <div class="order-info mb-5">
+                <ul class="d-flex justify-content-between align-items-center">
+                  <li>
+                    <span>الاجمالي</span>
+                    <span><span>350</span> ر.س</span>
+                  </li>
+                  <li>
+                    <span>الضريبة</span>
+                    <span><span>35</span> ر.س</span>
+                  </li>
+                  <li class="total-order-price border-0">
+                    <span> الاجمالي النهائي</span>
+                    <span><span>385</span> ر.س</span>
+                  </li>
+                </ul>
+              </div>
+              <button
+                type="button"
+                class="complete-order"
+                onclick="nextPrev(1)"
+              >
+                تأكيد الطلب
+              </button>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <div class="side-product-items d-flex flex-column p-3">
+                <div class="side-product-item d-flex align-items-center">
+                  <div class="col-4">
+                    <img src="images/05.png" alt="" />
+                  </div>
+                  <div class="col-8 p-2">
+                    <h6 class="mb-3">اسم المنتج يكتب هنا</h6>
+                    <div class="d-flex justify-content-between">
+                      <span class="quantity">الكمية : <span>1</span></span>
+                      <span class="price"><span>250</span> ريال</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="side-product-item d-flex align-items-center">
+                  <div class="col-4">
+                    <img src="images/05.png" alt="" />
+                  </div>
+                  <div class="col-8 p-2">
+                    <h6 class="mb-3">اسم المنتج يكتب هنا</h6>
+                    <div class="d-flex justify-content-between">
+                      <span class="quantity">الكمية : <span>1</span></span>
+                      <span class="price"><span>250</span> ريال</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="side-product-item d-flex align-items-center">
+                  <div class="col-4">
+                    <img src="/images/05.png" alt="" />
+                  </div>
+                  <div class="col-8 p-2">
+                    <h6 class="mb-3">اسم المنتج يكتب هنا</h6>
+                    <div class="d-flex justify-content-between">
+                      <span class="quantity">الكمية : <span>1</span></span>
+                      <span class="price"><span>250</span> ريال</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <h3 class="mb-5 text-center">تم تأكيد الطلب بنجاح</h3>
+            <div class="col-md-6 col-8">
+              <img src="images/05.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ***** subscribe  ***** -->
+    <section class="subscribe py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-12 align-self-center">
+            <div
+              class="d-flex align-items-center text-white justify-content-md-start justify-content-center"
+            >
+              <i class="bi bi-envelope-fill"></i>
+              <p>اشترك في نشرتنا الإخبارية</p>
+            </div>
+          </div>
+          <div class="col-md-7 col-12">
+            <form
+              action=""
+              class="d-flex justify-content-between align-items-center"
+            >
+              <input
+                type="text"
+                class="input-subscribe form-control"
+                placeholder="بريدك الإلكتروني"
+              />
+              <button class="btn btn-subscribe">اشترك</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** footer  ***** -->
+    <footer class="pt-4">
+      <div class="top-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 pb-3">
+              <div class="logo">
+                <img src="./images/Logo.png" alt="" />
+              </div>
+              <p class="py-2">
+                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام
+              </p>
+              <div
+                class="icons d-flex justify-content-lg-between justify-content-evenly align-items-center"
+              >
+                <i class="bi fa-brands fa-facebook-f"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 pb-3 pe-lg-5 pe-2">
+              <h4 class="head-footer">الدعم</h4>
+              <ul>
+                <li><a href="">المساعدة</a></li>
+                <li><a href="">سياسة الخصوصية</a></li>
+                <li><a href="">(+01) 850-315-5862</a></li>
+                <li><a href="">المنصورة-شارع الإستاد</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 pb-3 pe-lg-5 pe-2">
+              <h4 class="head-footer">الملف الشخصي</h4>
+              <ul>
+                <li><a href="">التسجيل</a></li>
+                <li><a href=""> الصفحة الشخصية</a></li>
+                <li><a href="">السلة</a></li>
+                <li><a href="">المفضلة</a></li>
+                <li><a href="">المقارنة</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 pb-3 pe-lg-5 pe-2">
+              <h4 class="head-footer">خريطة الموقع</h4>
+              <ul>
+                <li><a href="">الرئيسية</a></li>
+                <li><a href=""> المتجر</a></li>
+                <li><a href="">العروض</a></li>
+                <li><a href="">المدونة</a></li>
+                <li><a href="">التواصل</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer py-2">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-12">
+              <p>جميع الحقوق حفوظة لموقع سمارت فيجن</p>
+            </div>
+            <div class="col-md-6 col-12 brand">
+              <img src="./images/logooo.png" class="logo-footer" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/jquery.jqZoom.js"></script>
+    <!-- bootstrap script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+      integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+      integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.4/jquery.rateyo.min.js"
+      integrity="sha512-09bUVOnphTvb854qSgkpY/UGKLW9w7ISXGrN0FR/QdXTkjs0D+EfMFMTB+CGiIYvBoFXexYwGUD5FD8xVU89mw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script>
+      var currentTab = 0; // Current tab is set to be the first tab (0)
+      showTab(currentTab); // Display the current tab
+
+      function showTab(n) {
+        // This function will display the specified tab of the form...
+        var x = document.getElementsByClassName("tab");
+        x[n].style.display = "block";
+        //... and fix the Previous/Next buttons:
+
+        //... and run a function that will display the correct step indicator:
+        fixStepIndicator(n);
+      }
+
+      function nextPrev(n) {
+        // This function will figure out which tab to display
+        var x = document.getElementsByClassName("tab");
+        // Exit the function if any field in the current tab is invalid:
+        if (n == 1 && !validateForm()) return false;
+        // Hide the current tab:
+        x[currentTab].style.display = "none";
+        // Increase or decrease the current tab by 1:
+        currentTab = currentTab + n;
+        // if you have reached the end of the form...
+        if (currentTab >= x.length) {
+          // ... the form gets submitted:
+          document.getElementById("wizard").submit();
+          return false;
+        }
+        // Otherwise, display the correct tab:
+        showTab(currentTab);
+      }
+
+      function validateForm() {
+        // This function deals with validation of the form fields
+        var x,
+          y,
+          i,
+          valid = true;
+        x = document.getElementsByClassName("tab");
+        y = x[currentTab].getElementsByClassName("required");
+        // A loop that checks every input field in the current tab:
+        for (i = 0; i < y.length; i++) {
+          // If a field is empty...
+          if (y[i].value == "") {
+            // add an "invalid" class to the field:
+            y[i].className += " invalid";
+            // and set the current valid status to false
+            valid = false;
+          }
+        }
+        // If the valid status is true, mark the step as finished and valid:
+        if (valid) {
+          document.getElementsByClassName("step")[currentTab].className +=
+            " finish";
+        }
+        return valid; // return the valid status
+      }
+
+      function fixStepIndicator(n) {
+        // This function removes the "active" class of all steps...
+        var i,
+          x = document.getElementsByClassName("step");
+        for (i = 0; i < x.length; i++) {
+          x[i].className = x[i].className.replace(" active", "");
+        }
+        //... and adds the "active" class on the current step:
+        if ($(x[n]).hasClass("finish")) {
+          $(x[n]).removeClass("finish");
+        }
+        x[n].className += " active";
+      }
+    </script>
+  </body>
+</html>
