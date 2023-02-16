@@ -1198,6 +1198,12 @@ footer .top-footer ul li a {
   width: 250px;
 color: var(--white);
 }
+.address-tab small{
+  padding: 0 20px;
+  border-radius: 4px;
+  border: 1px solid #DBDBDB;
+  width: 100%;
+}
 .cart .cart-title{
   border: 1px solid #F6F6F6;
 }
