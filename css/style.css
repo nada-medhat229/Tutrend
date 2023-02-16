@@ -1198,6 +1198,7 @@ footer .top-footer ul li a {
   width: 250px;
 color: var(--white);
 }
+.payment-tab small,
 .address-tab small{
   padding: 0 20px;
   border-radius: 4px;
