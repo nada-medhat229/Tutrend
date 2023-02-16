@@ -406,6 +406,9 @@ header .navbar .navbar-nav .nav-item {
   color: #919191;
 }
 /* about */
+.recipt,
+.profile,
+.notification,
 .cart,
 .compare,
 .single-blog,
@@ -1150,10 +1153,6 @@ footer .top-footer ul li a {
 
 /* Hide all steps by default: */
 
-#wizard button:hover {
-  opacity: 0.8;
-}
-
 #wizard #prevBtn {
   background-color: #bbbbbb;
 }
@@ -1190,8 +1189,15 @@ footer .top-footer ul li a {
 .complete-order{
   background: var(--main-color);
   color: var(--white);
+  width: 250px;
+  padding: 10px;
 }
-
+.add-address:hover,
+.add-address{
+  background: #2A2A2A;
+  width: 250px;
+color: var(--white);
+}
 .cart .cart-title{
   border: 1px solid #F6F6F6;
 }
@@ -1259,95 +1265,131 @@ footer .top-footer ul li a {
   height: 1px;
   background: #D5D5D5;
   margin: auto;
+  margin-bottom: 0.5rem;
 }
-.Track-shipment-wizard {
-  background-color: #ffffff;
-  margin: 50px auto;
-  font-family: Raleway;
-  padding: 40px;
-  width: 100%;
-  min-width: 300px;
+ .cart-address{
+  border-radius: 8px;
+  margin-top: 1.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 2;
+  border: 1px solid #DBDBDB;
 }
-.Track-shipment-wizard .tab{
+ .cart-address .text-edit,
+ .cart-address .bi{
+  color: var(--main-color);
+}
+
+.form-address{
   display: none;
 }
-
-.Track-shipment-wizard h1 {
-  text-align: center;  
+.ordered-success{
+  max-width: 100%;
+  width: 450px;
 }
-
-
-/* Mark input boxes that gets an error on validation: */
-.Track-shipment-wizard .required.invalid {
-  background-color: #ffdddd;
+.credit-img{
+  width: 10%;
 }
-
-/* Hide all steps by default: */
-
-.Track-shipment-wizard button:hover {
-  opacity: 0.8;
+/* notification page*/
+.notification .image-notifi{
+  width: 70px;
+  padding: 15px;
+  background: #ECECEC;
+  border-radius: 8px;
 }
+.notification .notifi-data{
+  background: #F7F8F9;
+  color: #909090;
+  border-radius: 8px;
 
-.Track-shipment-wizard #prevBtn {
-  background-color: #bbbbbb;
 }
-
-.Track-shipment-wizard .step{
-  padding: 20px 0;
-  border: none;  
-  color: var(--dark);
-  display: inline-block;
-  opacity: 0.6;
-  flex: 1;
-  position: relative;
+.notification .notifi-data .bi{
+visibility: hidden;
+color: var(--main-color);
 }
-.Track-shipment-wizard .tab{
-  display: block;
+.notification .notifi-data:hover{
+  border: 1px solid var(--main-color);
+  }
+  .notification .notifi-data:hover .bi{
+    visibility: visible;
+  }
+  /* profile */
+  .profile .nav {
+    background: #F8F8F8;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 35px;
+    align-items: flex-start;
+  }
+  .profile .nav .nav-link{
+    margin-bottom: 10px ;
+    padding: 15px;
+    width: 100%;
+    color: #2A2A2A;
+    text-align: right;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  .profile .nav .nav-link .bi{
+    padding: 1px 9px;
+    background: var(--white);
+    color: #919191;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+  .profile .nav-pills .nav-link.active,.profile .nav-pills .show>.nav-link{
+    background-color: var(--main-color);
+    color: var(--white);
+    text-align: center;
+  }
+  .profile .nav-pills .nav-link.active .bi{
+    color: var(--main-color);
+  }
+  .profile table thead{
+    background: #F8F8F8;
+     }
+  .profile table thead tr{
+    border-radius: 8px;
+  }
+  .profile table tr td,
+  .profile table thead tr th{
+    padding: 15px;
+  }
+  .profile .code{
+    color: var(--main-color);
+  }
+.profile .tab-pane  .card.fav-card{
+border-radius: 18px;
 }
-
-.Track-shipment-wizard .step.active, .Track-shipment-wizard .step.finish{
-   opacity: 1;
-}
-.Track-shipment-wizard .step.active::after, .Track-shipment-wizard .step.finish::after {
-  content: "";
-  opacity: 1;
+  .profile .tab-pane .img-fluid{
   width: 100%;
-  height: 2px;
-  background: var(--light-orange);
-  position: absolute;
-  bottom: 0;
-  right: 0%;
-  transform: translateY(50%);
-}
-.Track-shipment-wizard .step1.active::after, .Track-shipment-wizard .step1.finish::after {
-  content: "";
-  width: 50%;
-  right: 50%;
-}
-.Track-shipment-wizard .step4.active::after, .Track-shipment-wizard .step4.finish::after {
-  content: "";
-  width: 50%;
-  left: 50%;
-}
-.Track-shipment-wizard .step.active::before, .Track-shipment-wizard .step.finish::before {
-  content: "\2713";
-  width: 30px;
-  height: 30px;
-  background-color: var(--main-color);
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  color: var(--white);
-  vertical-align:sub;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  border-radius: 50%;
-  z-index:9;
-  transform: translate(50%,50%);
-}
-/* Mark the steps that are finished and valid: */
-
+  }
+  .profile .tab-pane .fav-card .card-text{
+    color: var(--main-color);
+  }
+  .profile .tab-pane .fav-card .bi{
+    padding: 8px;
+    border-radius: 50%;
+    background: var(--white);
+    box-shadow: 0px 0px 15px #6E6E6E29;
+  }
+  /* recipt */
+  .recipt-card{
+    width: 75%;
+  }
+  .recipt-card .card-body{
+    width: 75% !important;
+    margin: 0 !important;
+    margin-right: 15px;
+    margin-left: auto !important;
+  }
+  .recipt-card .img-fluid{
+    border-radius: 20px !important;
+  }
+  .recipt-card .card-text small{
+    padding: 2px 25px;
+    border-radius: 4px;
+    border: 1px solid #DBDBDB;
+  }
 /* media */
 @media (min-width: 992px) and (max-width: 1370px) {
   .the-shop .card {
@@ -1492,6 +1534,21 @@ font-size: 12px;}
 }
   .compare ul li{
 font-size: 12px;  }
+.profile .nav {
+  padding: 4px;
+}
+.profile .nav .nav-link {
+  font-size: 9px;
+}
+.recipt-card .card-body {
+  width: 100% !important;
+}
+.recipt-card .img-fluid {
+  height: 100%;
+}
+.recipt-card {
+  width: 100% !important;
+}
 }
 @media (max-width: 767.9px) {
   .main-banner .carousel-caption {
@@ -1546,6 +1603,27 @@ font-size: 12px;  }
 #wizard .step {
 justify-content: flex-start !important;
 font-size: 12px;}
+.profile .nav {
+  padding: 4px;
+  flex-direction: row !important;
+  justify-content: space-evenly;
+}
+.profile .nav .nav-link {
+  width: max-content;
+  font-size: 12px;
+}
+.profile table tr td,
+  .profile table thead tr th{
+    padding: 10px;
+    font-size: 12px;
+  }
+  .recipt-card{
+    width: 100%;
+  }
+  .recipt-card .card-body{
+    width: 90% !important;
+    margin: auto !important;
+}
 }
 @media (max-width: 575.98px) {
   header .top-nav {
@@ -1597,5 +1675,11 @@ font-size: 12px;}
     }
     .cart-product-name h5{
       width: 100% !important;
+    }
+     .cart-address {
+      flex-direction: row;
+    }
+    .count-recipt{
+      font-size: 12px !important;
     }
 }

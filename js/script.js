@@ -138,24 +138,42 @@ $(document).ready(function () {
       viewerHeight: 400,
     });
   });
-  const minusButton = document.getElementById('minus');
-const plusButton = document.getElementById('plus');
-const inputField = document.getElementById('input');
 
-  minusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(inputField.value) || 0;
-    inputField.value = currentValue - 1;
+  $(".add-address").click(function () {
+    if ($(".form-address").css("display") == "block") {
+      $(".form-address").hide();
+    } else {
+      $(".form-address").show();
+    }
   });
-  
-  plusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(inputField.value) || 0;
-    inputField.value = currentValue + 1;
-  }); 
+  $(".input-cridet").hide();
 
+  $('input[type="radio"]').change(function () {
+    if ($(".lable-cridet").is(":checked")) {
+      $(".input-cridet").show();
+    } else {
+      $(".input-cridet").hide();
+    }
+  });
 
+  if ($(".cart-product-item").length > 0) {
+    $(".quantity.plus").click(function (e) {
+      let $input = $(this).next("input.qty");
+      let val = parseInt($input.val());
+      $input.val(val + 1).change();
+      $input.value = $input.val(val + 1).change();
+      console.log($input.val(val + 1).change());
+    });
+
+    $(".quantity.minus").click(function (e) {
+      let $input = $(this).prev("input.qty");
+      var val = parseInt($input.val());
+      if (val > 1) {
+        $input.val(val - 1).change();
+      }
+      console.log(val);
+    });
+  }
 
   AOS.init();
-
 });

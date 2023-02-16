@@ -77,7 +77,7 @@
               <p class="mx-2">
                 <a href="">EN</a>
               </p>
-              <a class="icon mx-2" href=""><i class="bi bi-bell-fill"></i></a>
+              <a class="icon mx-2" href="./notification.html"><i class="bi bi-bell-fill"></i></a>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -96,7 +96,7 @@
       <div class="container">
         <nav
           class="navbar navbar-expand-lg navbar-light top-0 d-flex align-items-center justify-content-between"
-          data-aos="fade-down"
+          
         >
           <div class="logo ps-3">
             <a href="./index.html">
@@ -132,6 +132,8 @@
                 <i class="bi bi-person-fill"></i>
               </button>
               <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./profile.html"> الملف الشخصي</a></li>
+
                 <li>
                   <a class="dropdown-item" href="./login.html">تسجيل الدخول</a>
                 </li>
@@ -189,6 +191,8 @@
                 <i class="bi bi-person-fill"></i>
               </button>
               <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./profile.html"> الملف الشخصي</a></li>
+
                 <li>
                   <a class="dropdown-item" href="./login.html">تسجيل الدخول</a>
                 </li>
@@ -218,49 +222,51 @@
     <div id="wizard" class="cart py-5">
       <div class="steps-container row">
         <div class="col-md-3 col-6">
-            <a href="javascript:void" class="step step1">
-                <i class="bi bi-cart-fill"></i>السلة
-              </a>
+          <a href="javascript:void" class="step step1">
+            <i class="bi bi-cart-fill"></i>السلة
+          </a>
         </div>
         <div class="col-md-3 col-6">
-            <a href="javascript:void" class="step">
-                <i class="bi bi-geo-alt-fill"></i>
-                عنوان الشحن
-              </a></div>
-              <div class="col-md-3 col-6">
-                <a href="javascript:void" class="step">
-                    <i class="bi fa-solid fa-wallet"></i>
-                    <p class="pe-2">طريقة الدفع</p>
-                  </a>
-              </div>
-              <div class="col-md-3 col-6">
-                <a href="javascript:void" class="step step4">
-                    <i class="bi fa-solid fa-check"></i>
-                    <p class="pe-2">تأكيد الدفع</p>
-                  </a>
-              </div>
-
-     
+          <a href="javascript:void" class="step">
+            <i class="bi bi-geo-alt-fill"></i>
+            عنوان الشحن
+          </a>
+        </div>
+        <div class="col-md-3 col-6">
+          <a href="javascript:void" class="step">
+            <i class="bi fa-solid fa-wallet"></i>
+            <p class="pe-2">طريقة الدفع</p>
+          </a>
+        </div>
+        <div class="col-md-3 col-6">
+          <a href="javascript:void" class="step step4">
+            <i class="bi fa-solid fa-check"></i>
+            <p class="pe-2">تأكيد الدفع</p>
+          </a>
+        </div>
       </div>
       <!-- One "tab" for each step in the form: -->
       <div class="tab">
         <div class="container orders-cart">
           <div class="row">
-            <div class=" col-lg-9 col-12 ">
-              <div class="cart-title bg-white d-flex justify-content-between p-2 align-items-center rounded px-4">
-                    <h6>
-                        السلة
-                    </h6>
-                    <span>
-                        2
-                    </span>
+            <div class="col-lg-9 col-12">
+              <div
+                class="cart-title bg-white d-flex justify-content-between p-2 align-items-center rounded px-4"
+              >
+                <h6>السلة</h6>
+                <span> 2 </span>
               </div>
-              <div class="cart-product-item row pt-4 pb-5 align-items-center border-bottom">
+              <div
+                class="cart-product-item row pt-4 pb-5 align-items-center border-bottom"
+              >
                 <div class="col-md-4 col-12">
-                  <img src="images/07.png" alt="" class="img-cart mb-md-0 mb-3"/>
+                  <img
+                    src="images/07.png"
+                    alt=""
+                    class="img-cart mb-md-0 mb-3"
+                  />
                 </div>
                 <div class="col-md-8 col-12">
-                   
                   <div
                     class="cart-product-name d-flex justify-content-between align-items-center"
                   >
@@ -268,33 +274,38 @@
                       سماعات جالاكسي بدز برو SM R190NZKAINU من سامسونج بلون
                       فانتوم - اسود العددد (12 قطعة)
                     </h5>
-                   
-                      <button class="btn remove-product fw-bold"> حذف</button>
-                   
+
+                    <button class="btn remove-product fw-bold">حذف</button>
                   </div>
                   <p class="product-preview fs-5 py-md-4 py-2">500جنيه</p>
-                    <div class="product-quantity d-flex align-items-center justify-content-between">
-                      <div class="d-flex align-items-center">
+                  <div
+                    class="product-quantity d-flex align-items-center justify-content-between"
+                  >
+                    <div class="d-flex align-items-center">
                       <h5>الكمية بالدستة</h5>
-
-                        <button id="minus" class="btn btn-calc"><i class="bi bi-dash-circle-fill"></i></button>
-                        <input type="text" value="0" id="input" class="value-output"/>
-                        <button id="plus" class="btn btn-calc"><i class="bi bi-plus-circle-fill"></i></button>  
+                      <div class="product-quantity">
+                        <a href="javascript:void(0);" class="qtyplus plus quantity btn btn-calc"><i class="bi bi-plus-circle-fill"></i></a>
+                        <input type="text" name="quantity" value="0"  class="qty value-output">
+                        <a href="javascript:void(0);" class="qtyminus minus quantity btn btn-calc"><i class="bi bi-dash-circle-fill"></i></a>
                       </div>
-                      <div class="product-full-price">
-                        <h5 class="d-inline-block">الإجمالي</h5>
-                        <span class="fs-5 px-2 px-md-3">250 ريال</span>
-                      </div>
-                    </div>
                    
+                    </div>
+                    <div class="product-full-price">
+                      <h5 class="d-inline-block">الإجمالي</h5>
+                      <span class="fs-5 px-2 px-md-3">250 ريال</span>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="cart-product-item row pt-4 pb-5 align-items-center">
                 <div class="col-md-4 col-12">
-                  <img src="images/07.png" alt="" class="img-cart mb-md-0 mb-3"/>
+                  <img
+                    src="images/07.png"
+                    alt=""
+                    class="img-cart mb-md-0 mb-3"
+                  />
                 </div>
                 <div class="col-md-8 col-12">
-                   
                   <div
                     class="cart-product-name d-flex justify-content-between align-items-center"
                   >
@@ -302,281 +313,372 @@
                       سماعات جالاكسي بدز برو SM R190NZKAINU من سامسونج بلون
                       فانتوم - اسود العددد (12 قطعة)
                     </h5>
-                   
-                      <button class="btn remove-product fw-bold"> حذف</button>
-                   
+
+                    <button class="btn remove-product fw-bold">حذف</button>
                   </div>
                   <p class="product-preview fs-5 py-md-4 py-2">500جنيه</p>
-                    <div class="product-quantity d-flex align-items-center justify-content-between">
-                      <div class="d-flex align-items-center">
+                  <div
+                    class="product-quantity d-flex align-items-center justify-content-between"
+                  >
+                    <div class="d-flex align-items-center">
                       <h5>الكمية بالدستة</h5>
-
-                        <button id="minus" class="btn btn-calc"><i class="bi bi-dash-circle-fill"></i></button>
-                        <input type="text" value="0" id="input" class="value-output"/>
-                        <button id="plus" class="btn btn-calc"><i class="bi bi-plus-circle-fill"></i></button>  
-                      </div>
-                      <div class="product-full-price">
-                        <h5 class="d-inline-block">الإجمالي</h5>
-                        <span class="fs-5 px-2 px-md-3">250 ريال</span>
+                      <div class="product-quantity">
+                        <a href="javascript:void(0);" class="qtyplus plus quantity btn btn-calc"><i class="bi bi-plus-circle-fill"></i></a>
+                        <input type="text" name="quantity" value="0" class="qty value-output">
+                        <a href="javascript:void(0);" class="qtyminus minus quantity btn btn-calc"><i class="bi bi-dash-circle-fill"></i></a>
                       </div>
                     </div>
-                   
+                    <div class="product-full-price">
+                      <h5 class="d-inline-block">الإجمالي</h5>
+                      <span class="fs-5 px-2 px-md-3">250 ريال</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class=" col-lg-3 col-12  px-xl-5 px-0">
-              <div class="order-summary p-3 ">
+            <div class="col-lg-3 col-12 px-xl-5 px-0">
+              <div class="order-summary p-3">
                 <h6 class="fw-bold pb-3">ملخص الطلب</h6>
-                <p class="d-flex justify-content-between pb-3">عدد المنتجات <span class="ps-4">2</span></p>
-                <p class="d-flex justify-content-between pb-3">السعر<span>1000جنيه</span></p>
+                <p class="d-flex justify-content-between pb-3">
+                  عدد المنتجات <span class="ps-4">2</span>
+                </p>
+                <p class="d-flex justify-content-between pb-3">
+                  السعر<span>1000جنيه</span>
+                </p>
                 <h6 class="fw-bold border-top py-3">التوصيل</h6>
-               <form action="" class="pb-3">
-                <div class="form-check">
-                    <input type="radio" id="inside" name="delivary" value="inside" class="form-check-input">
-                    <label for="" class="form-check-label">داخل المنصورة
-                        </label>
+                <form action="" class="pb-3">
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      id="inside"
+                      name="delivary"
+                      value="inside"
+                      class="form-check-input"
+                    />
+                    <label for="" class="form-check-label"
+                      >داخل المنصورة
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      id="outside"
+                      name="delivary"
+                      value="outside"
+                      class="form-check-input"
+                    />
+                    <label for="" class="form-check-label"
+                      >خارج المنصورة
+                    </label>
+                  </div>
+                </form>
+                <div
+                  class="border-top py-3 d-flex justify-content-center count-total fw-bold"
+                >
+                  <p>الإجمالي</p>
+                  <span>500جنيه</span>
                 </div>
-                <div class="form-check">
-                    <input type="radio" id="outside" name="delivary" value="outside" class="form-check-input">
-                    <label for="" class="form-check-label">خارج المنصورة 
-                        </label>
-                </div>
-               </form>
-               <div class="border-top py-3 d-flex justify-content-center count-total fw-bold">
-                <p>الإجمالي</p>
-                <span>500جنيه</span>
-               </div>
                 <button
                   type=" button "
                   class="btn complete-order w-100"
                   onclick="nextPrev(1)"
                 >
-                تأكيد الطلب
+                  تأكيد الطلب
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-     
+
       <div class="tab">
         <div class="container address-tab">
-            <div class="row">
-                <div class=" col-lg-9 col-12 ">
-                  <div class="cart-title bg-white d-flex justify-content-between p-2 align-items-center rounded px-4">
-                        <h6>
-                            عنوان الشحن
-                        </h6>
-                       
-                  </div>
+          <div class="row">
+            <div class="col-lg-9 col-12">
+              <div
+                class="cart-title bg-white d-flex justify-content-between p-3 align-items-center rounded px-4"
+              >
+                <h6>عنوان الشحن</h6>
+              </div>
 
-                  <div class="cart-product-item row pt-4 pb-5 align-items-center border-bottom">
-                    <div class="col-md-4 col-12">
-                      <img src="images/07.png" alt="" class="img-cart mb-md-0 mb-3"/>
-                    </div>
-                    <div class="col-md-8 col-12">
-                       
-                      <div
-                        class="cart-product-name d-flex justify-content-between align-items-center"
-                      >
-                        <h5 class="w-75">
-                          سماعات جالاكسي بدز برو SM R190NZKAINU من سامسونج بلون
-                          فانتوم - اسود العددد (12 قطعة)
-                        </h5>
-                       
-                          <button class="btn remove-product fw-bold"> حذف</button>
-                       
-                      </div>
-                      <p class="product-preview fs-5 py-md-4 py-2">500جنيه</p>
-                        <div class="product-quantity d-flex align-items-center justify-content-between">
-                          <div class="d-flex align-items-center">
-                          <h5>الكمية بالدستة</h5>
-    
-                            <button id="minus" class="btn btn-calc"><i class="bi bi-dash-circle-fill"></i></button>
-                            <input type="text" value="0" id="input" class="value-output"/>
-                            <button id="plus" class="btn btn-calc"><i class="bi bi-plus-circle-fill"></i></button>  
-                          </div>
-                          <div class="product-full-price">
-                            <h5 class="d-inline-block">الإجمالي</h5>
-                            <span class="fs-5 px-2 px-md-3">250 ريال</span>
-                          </div>
-                        </div>
-                       
-                    </div>
+              <div
+                class="cart-address py-4 px-3 d-flex justify-content-between align-items-center align-items-center"
+              >
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-record-circle-fill"></i>
+                  <div class="pe-3">
+                    <h6>الاسم يكتب هنا</h6>
+                    <p>العنوان هنا .. العنوان هنا .. العنوان هنا .. العنوان</p>
                   </div>
-                  <div class="cart-product-item row pt-4 pb-5 align-items-center">
-                    <div class="col-md-4 col-12">
-                      <img src="images/07.png" alt="" class="img-cart mb-md-0 mb-3"/>
-                    </div>
-                    <div class="col-md-8 col-12">
-                       
-                      <div
-                        class="cart-product-name d-flex justify-content-between align-items-center"
-                      >
-                        <h5 class="w-75">
-                          سماعات جالاكسي بدز برو SM R190NZKAINU من سامسونج بلون
-                          فانتوم - اسود العددد (12 قطعة)
-                        </h5>
-                       
-                          <button class="btn remove-product fw-bold"> حذف</button>
-                       
-                      </div>
-                      <p class="product-preview fs-5 py-md-4 py-2">500جنيه</p>
-                        <div class="product-quantity d-flex align-items-center justify-content-between">
-                          <div class="d-flex align-items-center">
-                          <h5>الكمية بالدستة</h5>
-    
-                            <button id="minus" class="btn btn-calc"><i class="bi bi-dash-circle-fill"></i></button>
-                            <input type="text" value="0" id="input" class="value-output"/>
-                            <button id="plus" class="btn btn-calc"><i class="bi bi-plus-circle-fill"></i></button>  
-                          </div>
-                          <div class="product-full-price">
-                            <h5 class="d-inline-block">الإجمالي</h5>
-                            <span class="fs-5 px-2 px-md-3">250 ريال</span>
-                          </div>
-                        </div>
-                       
-                    </div>
-                  </div>
-                  <button
-                  type="button"
-                  class="btn complete-order"
-                  onclick="nextPrev(1)"
-                >
-                  استمرار
-                </button>
                 </div>
-                <div class=" col-lg-3 col-12  px-xl-5 px-0">
-                    <div class="result-order d-flex py-3">
-                        <div>
-                            <img src="./images/07.png" class="rounded img-checkout" alt="">
-                        </div>
-                        <div >
-                                    <select id="" name="" class="form-control form-select" aria-label="">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                    <p>
-                                        500جنيه
-                                    </p>
-                        </div>
+                <p class="text-edit">
+                  <i class="bi bi-pencil-square"></i>
+                  تعديل العنوان
+                </p>
+              </div>
+
+              <button
+                type="button"
+                class="btn complete-order p-2 mb-3"
+                onclick="nextPrev(1)"
+              >
+                استمرار
+              </button>
+              <button type="button" class="btn add-address p-2 mb-3">
+                إضافة عنوان
+              </button>
+              <div class="py-5 form-address">
+                <form action="">
+                  <div class="row">
+                    <div class="col-md-6 col-12">
+                      <label for="">الاسم الأول</label>
+                      <input type="text" class="form-control" />
                     </div>
-                    <div class="bordinbottom"></div>
-                    <div class="result-order d-flex py-3">
-                        <div>
-                            <img src="./images/07.png" class="rounded img-checkout" alt="">
-                        </div>
-                        <div >
-                                    <select id="" name="" class="form-control form-select" aria-label="">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                    <p>
-                                        500جنيه
-                                    </p>
-                        </div>
+                    <div class="col-md-6 col-12">
+                      <label for="">الاسم الأخير </label>
+                      <input type="text" class="form-control" />
                     </div>
-                  <div class="order-summary p-3 ">
-                    <h6 class="fw-bold pb-3">ملخص الطلب</h6>
-                    <p class="d-flex justify-content-between pb-3">عدد المنتجات <span class="ps-4">2</span></p>
-                    <p class="d-flex justify-content-between pb-3">السعر<span>1000جنيه</span></p>
-                    <p class="d-flex justify-content-between pb-3">التوصيل<span>1000جنيه</span></p>
-                  
-                   <div class="border-top py-3 d-flex justify-content-center count-total fw-bold">
-                    <p>الإجمالي</p>
-                    <span>500جنيه</span>
-                   </div>
-                   
+                    <div class="col-md-6 col-12">
+                      <label for="">البريد الإلكتروني </label>
+                      <input type="email" class="form-control" />
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <label for="">رقم الهاتف </label>
+                      <input type="tel" class="form-control" />
+                    </div>
+                    <div class="col-md-12 col-12">
+                      <label for="">العنوان بالكامل </label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <label for="">المحافظة </label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <label for="">المدينة </label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <label for="">المنطقة </label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <label for="">الشارع </label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <label for="">رقم المبنى </label>
+                      <input type="number" class="form-control" />
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <label for="">رقم الطابق </label>
+                      <input type="number" class="form-control" />
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <button type="button" class="btn complete-order" onclick="nextPrev(1)">
+                        اضافة واستمرار
+                      </button>
+                    </div>
                   </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12 px-xl-5 px-0">
+              <div class="result-order d-flex pb-3">
+                <div>
+                  <img
+                    src="./images/07.png"
+                    class="rounded img-checkout"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <select
+                    id=""
+                    name=""
+                    class="form-control form-select"
+                    aria-label=""
+                  >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                  <p>500جنيه</p>
                 </div>
               </div>
+              <div class="bordinbottom"></div>
+              <div class="result-order d-flex pb-3">
+                <div>
+                  <img
+                    src="./images/07.png"
+                    class="rounded img-checkout"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <select
+                    id=""
+                    name=""
+                    class="form-control form-select"
+                    aria-label=""
+                  >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                  <p>500جنيه</p>
+                </div>
+              </div>
+              <div class="order-summary p-3">
+                <h6 class="fw-bold pb-3">ملخص الطلب</h6>
+                <p class="d-flex justify-content-between pb-3">
+                  عدد المنتجات <span class="ps-4">2</span>
+                </p>
+                <p class="d-flex justify-content-between pb-3">
+                  السعر<span>1000جنيه</span>
+                </p>
+                <p class="d-flex justify-content-between pb-3">
+                  التوصيل<span>1000جنيه</span>
+                </p>
+
+                <div
+                  class="border-top py-3 d-flex justify-content-center count-total fw-bold"
+                >
+                  <p>الإجمالي</p>
+                  <span>500جنيه</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="tab">
-        <div class="container order-preview">
-          <div class="row flex-lg-row flex-column-reverse">
-            <div class="col-12 col-lg-8 mb-4">
-              <div class="order-address d-flex align-items-center mb-5">
-                <a
-                  href="javascript:void(0);"
-                  class="edit-address"
-                  onclick="nextPrev(-1)"
-                  ><i class="bi bi-pencil-square"></i> تعديل العنوان</a
-                >
-                <div>
-                  <h6>عنوان الشحن</h6>
-                </div>
-                <div class="d-flex flex-column px-3">
-                  <span class="mb-2 text">الاسم يكتب هنا</span>
-                  <span
-                    >العنوان يكتب هنا...العنوان يكتب هنا...العنوانيكتب هنا</span
-                  >
-                </div>
+        <div class="container payment-tab">
+          <div class="row">
+            <div class="col-lg-9 col-12">
+              <div class="cart-title bg-white d-flex justify-content-between p-3 align-items-center rounded px-4">
+                <h6>طرق الدفع </h6>
               </div>
-              <div class="order-info mb-5">
-                <ul class="d-flex justify-content-between align-items-center">
-                  <li>
-                    <span>الاجمالي</span>
-                    <span><span>350</span> ر.س</span>
-                  </li>
-                  <li>
-                    <span>الضريبة</span>
-                    <span><span>35</span> ر.س</span>
-                  </li>
-                  <li class="total-order-price border-0">
-                    <span> الاجمالي النهائي</span>
-                    <span><span>385</span> ر.س</span>
-                  </li>
-                </ul>
-              </div>
-              <button
-                type="button"
-                class="complete-order"
-                onclick="nextPrev(1)"
-              >
-                تأكيد الطلب
-              </button>
-            </div>
+              <div class="form-payment py-5">
+                <form action="">
+                  <div class="form-check ">
+                    <input type="radio"
+                        id="popular"
+                        name="payment"
+                        value="popular"
+                        class="form-check-input" checked>
+                    <label for=""
+                        class="form-check-label">
+                      <img src="./images/svgexport-10 (16).svg" alt="" class="credit-img w-25">
+                        <p class="d-inline-block">
+                          الدفع نقدًا
+                        </p>
+                        </label>
+                </div>
+                <div class="form-check">
+                  <input type="radio"
+                      id="popular"
+                      name="payment"
+                      value="popular"
+                      class="form-check-input lable-cridet" >
+                  <label for=""
+                      class="form-check-label">
+                      <img src="./images/svgexport-6 - 2022-09-15T162540.529.svg" alt="" class="credit-img">
+                      <p class="d-inline-block">
+                        الدفع ببطاقة الائتمان
+                      </p>
+                      <img src="./images/svgexport-6 - 2022-09-15T163314.104.svg" alt="" class="credit-img">
+                      <img src="./images/svgexport-6 - 2022-08-22T100020.837.svg" alt="" class="credit-img">
+                      <img src="./images/svgexport-6 - 2022-08-22T095911.332.svg" alt="" class="credit-img">
+                      <img src="./images/svgexport-6 - 2022-08-22T095516.500.svg" alt="" class="credit-img">
 
-            <div class="col-12 col-lg-4">
-              <div class="side-product-items d-flex flex-column p-3">
-                <div class="side-product-item d-flex align-items-center">
-                  <div class="col-4">
-                    <img src="images/05.png" alt="" />
-                  </div>
-                  <div class="col-8 p-2">
-                    <h6 class="mb-3">اسم المنتج يكتب هنا</h6>
-                    <div class="d-flex justify-content-between">
-                      <span class="quantity">الكمية : <span>1</span></span>
-                      <span class="price"><span>250</span> ريال</span>
-                    </div>
-                  </div>
+                    </label>
+              </div>
+              <div class="row input-cridet pt-5 ">
+                <div class="col-12">
+                  <label for="">رقم البطاقة </label>
+                  <input type="number" class="form-control" />
+               
                 </div>
-                <div class="side-product-item d-flex align-items-center">
-                  <div class="col-4">
-                    <img src="images/05.png" alt="" />
-                  </div>
-                  <div class="col-8 p-2">
-                    <h6 class="mb-3">اسم المنتج يكتب هنا</h6>
-                    <div class="d-flex justify-content-between">
-                      <span class="quantity">الكمية : <span>1</span></span>
-                      <span class="price"><span>250</span> ريال</span>
-                    </div>
-                  </div>
+                <div class="col-md-6 col-12">
+                  <label for="">تاريخ الانتهاء  </label>
+                  <input type="date" class="form-control " />
+               
                 </div>
-                <div class="side-product-item d-flex align-items-center">
-                  <div class="col-4">
-                    <img src="/images/05.png" alt="" />
-                  </div>
-                  <div class="col-8 p-2">
-                    <h6 class="mb-3">اسم المنتج يكتب هنا</h6>
-                    <div class="d-flex justify-content-between">
-                      <span class="quantity">الكمية : <span>1</span></span>
-                      <span class="price"><span>250</span> ريال</span>
-                    </div>
-                  </div>
+                <div class="col-md-6 col-12">
+                  <label for="">رقمCVC</label>
+                  <input type="number" class="form-control " />
+               
+                </div>
+              </div>
+              <button type="button" class="btn complete-order w-100 mt-3" onclick="nextPrev(1)">دفع</button>
+                </form>
+              </div>
+           
+            </div>
+            <div class="col-lg-3 col-12 px-xl-5 px-0">
+              <div class="result-order d-flex py-3">
+                <div>
+                  <img
+                    src="./images/07.png"
+                    class="rounded img-checkout"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <select
+                    id=""
+                    name=""
+                    class="form-control form-select"
+                    aria-label=""
+                  >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                  <p>500جنيه</p>
+                </div>
+              </div>
+              <div class="bordinbottom"></div>
+              <div class="result-order d-flex py-3">
+                <div>
+                  <img
+                    src="./images/07.png"
+                    class="rounded img-checkout"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <select
+                    id=""
+                    name=""
+                    class="form-control form-select"
+                    aria-label=""
+                  >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                  <p>500جنيه</p>
+                </div>
+              </div>
+              <div class="order-summary p-3">
+                <h6 class="fw-bold pb-3">ملخص الطلب</h6>
+                <p class="d-flex justify-content-between pb-3">
+                  عدد المنتجات <span class="ps-4">2</span>
+                </p>
+                <p class="d-flex justify-content-between pb-3">
+                  السعر<span>1000جنيه</span>
+                </p>
+                <p class="d-flex justify-content-between pb-3">
+                  التوصيل<span>1000جنيه</span>
+                </p>
+
+                <div
+                  class="border-top py-3 d-flex justify-content-center count-total fw-bold"
+                >
+                  <p>الإجمالي</p>
+                  <span>500جنيه</span>
                 </div>
               </div>
             </div>
@@ -586,10 +688,22 @@
       <div class="tab">
         <div class="container">
           <div class="row justify-content-center align-items-center">
-            <h3 class="mb-5 text-center">تم تأكيد الطلب بنجاح</h3>
-            <div class="col-md-6 col-8">
-              <img src="images/05.png" alt="" />
+            <div class="text-center">
+              <img src="./images/E-Wallet-rafiki.png" class="ordered-success" alt="">
+              <p class="py-5 fs-4">
+                تم الحجز بنجاح
+              </p>
+              <a
+              href="./the_shop.html"
+              class="btn complete-order p-2 ms-3 mb-3"
+            >
+            متابعة التسوق
+            </a>
+            <a href="./index.html"  class="btn add-address p-2 mb-3 ms-3">
+              الذهاب للرئيسية
+            </a>
             </div>
+            
           </div>
         </div>
       </div>
@@ -698,6 +812,12 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./js/jquery.jqZoom.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- bootstrap script -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
@@ -705,6 +825,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
       integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
@@ -720,7 +841,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- custom js file link  -->
+
     <script src="js/script.js"></script>
     <script>
       var currentTab = 0; // Current tab is set to be the first tab (0)
